@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">🔷 Horizon</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <nav>
+            <a href="#" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="nav-item active"><i class="fas fa-credit-card"></i> My Banks</a>
+            <a href="#" class="nav-item"><i class="fas fa-history"></i> Transaction History</a>
+            <a href="#" class="nav-item"><i class="fas fa-exchange-alt"></i> Payment Transfer</a>
+            <a href="#" class="nav-item"><i class="fas fa-link"></i> Connect Bank</a>
+        </nav>
+    </aside>
+    <div class="main-content">
+        <div class="header">
+            <h1>Transaction history</h1>
+            <select class="select-account">
+                <option>Select Account ▼</option>
+            </select>
+        </div>
+        <p>Gain Insights and Track Your Transactions Over Time</p>
+        <div class="account-card">
+            <h2>Chase</h2>
+            <div class="account-number">Chase Growth Savings Account</div>
+            <div>•••• •••• •••• 9999</div>
+            <div class="balance">Current Balance<br>$41,382.80</div>
+        </div>
+        <div class="transaction-header">
+            <h2>Transaction history</h2>
+            <div class="apply-filter">≡ Apply filter</div>
+        </div>
+        <table>
+            <tr>
+                <th>Transaction</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td><img src="/placeholder.svg?height=40&width=40" alt="Spotify" class="transaction-icon"> Spotify</td>
+                <td style="color: red;">- $15.00</td>
+                <td><span class="status processing">Processing</span></td>
+                <td>Wed 1:00pm</td>
+                <td><span class="category">Subscriptions</span></td>
+            </tr>
+            <tr>
+                <td><img src="/placeholder.svg?height=40&width=40" alt="Alexa Doe" class="transaction-icon"> Alexa Doe</td>
+                <td style="color: green;">+ $88.00</td>
+                <td><span class="status success">Success</span></td>
+                <td>Wed 2:45am</td>
+                <td><span class="category">Deposit</span></td>
+            </tr>
+            <tr>
+                <td><img src="/placeholder.svg?height=40&width=40" alt="JSM Pro" class="transaction-icon"> JSM Pro</td>
+                <td style="color: red;">- $18.99</td>
+                <td><span class="status processing">Processing</span></td>
+                <td>Mon 1:10pm</td>
+                <td><span class="category">Subscriptions</span></td>
+            </tr>
+            <tr>
+                <td><img src="/placeholder.svg?height=40&width=40" alt="Fresh F&V" class="transaction-icon"> Fresh F&V</td>
+                <td style="color: red;">- $88.00</td>
+                <td><span class="status success">Success</span></td>
+                <td>Tue 12:15pm</td>
+                <td><span class="category">Groceries</span></td>
+            </tr>
+            <tr>
+                <td><img src="/placeholder.svg?height=40&width=40" alt="Figma" class="transaction-icon"> Figma</td>
+                <td style="color: red;">- $18.99</td>
+                <td><span class="status processing">Processing</span></td>
+                <td>Tue 6:10pm</td>
+                <td><span class="category">Income</span></td>
+            </tr>
+            <tr>
+                <td><img src="/placeholder.svg?height=40&width=40" alt="Sam Sulek" class="transaction-icon"> Sam Sulek</td>
+                <td style="color: red;">- $40.20</td>
+                <td><span class="status declined">Declined</span></td>
+                <td>Tue 5:40am</td>
+                <td><span class="category">Food and dining</span></td>
+            </tr>
+        </table>
+        <div class="pagination">
+            <a href="#">← Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">...</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">Next →</a>
+        </div>
+        <div class="user-info">
+            <img src="/placeholder.svg?height=40&width=40" alt="Adrian Hajdin" class="user-avatar">
+            <div>
+                <div>Adrian Hajdin</div>
+                <div>adrian@jsmastery.pro</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
