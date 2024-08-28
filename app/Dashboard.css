@@ -20,6 +20,7 @@ body {
     background-color: #fff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    /* position: fixed; */
 }
 
 .logo {
@@ -28,47 +29,29 @@ body {
     margin-bottom: 30px;
 }
 
-.logo-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #4285f4;
-    border-radius: 4px;
-    margin-right: 10px;
-}
 
 .logo-text {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 
-.search-container {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.search-container i {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-}
-
-.search-container input {
+.search-input {
     width: 100%;
-    padding: 10px 10px 10px 35px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
     padding: 10px;
-    color: #666;
+    color: #4b5563;
     text-decoration: none;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 .nav-item i {
@@ -76,13 +59,19 @@ body {
 }
 
 .nav-item.active {
-    background-color: #e8f0fe;
-    color: #4285f4;
+    background-color: #e0e7ff;
+    color: #3b82f6;
+}
+
+.nav-item:hover {
+    background-color: #e0e7ff;
+    color: #3b82f6;
 }
 
 main {
     flex-grow: 1;
-    padding: 30px;
+    padding: 20px;
+    padding-bottom: 80px;
 }
 
 header h1 {
@@ -246,6 +235,245 @@ header p {
     vertical-align: middle;
 }
 
-/* .text-logo {
+.text-logo {
     display: inline-flex;
-    align-items: */
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #f0f2f5;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.amount.negative {
+    color: #ea4335;
+}
+
+.amount.positive {
+    color: #34a853;
+}
+
+.status {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.status.processing {
+    background-color: #fef7e0;
+    color: #f9ab00;
+}
+
+.status.success {
+    background-color: #e6f4ea;
+    color: #34a853;
+}
+
+.status.declined {
+    background-color: #fce8e6;
+    color: #ea4335;
+}
+
+.category {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.category.subscriptions {
+    background-color: #e8f0fe;
+    color: #4285f4;
+}
+
+.category.deposit {
+    background-color: #e6f4ea;
+    color: #34a853;
+}
+
+.category.income {
+    background-color: #fef7e0;
+    color: #f9ab00;
+}
+
+.category.groceries {
+    background-color: #fce8e6;
+    color: #ea4335;
+}
+
+.category.food {
+    background-color: #e8eaed;
+    color: #5f6368;
+}
+
+.right-sidebar {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.user-info p {
+    color: #666;
+}
+
+.my-banks .section-header {
+    margin-bottom: 15px;
+}
+
+.add-bank.small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.bank-cards {
+    margin-bottom: 30px;
+}
+
+.bank-card {
+    background: linear-gradient(45deg, #4285f4, #34a853);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-content h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.card-type {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.my-budgets .section-header {
+    margin-bottom: 15px;
+}
+
+.more-options {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.budget-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.budget-item {
+    display: flex;
+    align-items: center;
+}
+
+.budget-item i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #4285f4;
+}
+
+.budget-info {
+    flex-grow: 1;
+}
+
+.budget-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #e8eaed;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4285f4;
+}
+
+.budget-amount {
+    font-size: 12px;
+    color: #666;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px 30px;
+    padding-bottom: 0%;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-email {
+    font-size: 12px;
+    color: #6b7280;
+}

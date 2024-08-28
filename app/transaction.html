@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transaction History</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="transaction.css">
 </head>
 <body>
     <aside class="sidebar">
-        <div class="logo">🔷 Horizon</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
+        <div class="logo">
+            <span class="logo-text">🔷 Horizon</span>
         </div>
+        <input type="text" class="search-input" placeholder="Search">
         <nav>
-            <a href="#" class="nav-item"><i class="fas fa-home"></i> Home</a>
-            <a href="#" class="nav-item active"><i class="fas fa-credit-card"></i> My Banks</a>
-            <a href="#" class="nav-item"><i class="fas fa-history"></i> Transaction History</a>
-            <a href="#" class="nav-item"><i class="fas fa-exchange-alt"></i> Payment Transfer</a>
+            <a href="./Dashboard.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="./index.html" class="nav-item"><i class="fas fa-credit-card"></i> My Banks</a>
+            <a href="./transaction.html" class="nav-item active"><i class="fas fa-history"></i> Transaction History</a>
+            <a href="./payment.html" class="nav-item"><i class="fas fa-exchange-alt"></i> Payment Transfer</a>
             <a href="#" class="nav-item"><i class="fas fa-link"></i> Connect Bank</a>
         </nav>
     </aside>
@@ -25,9 +26,13 @@
             <h1>Transaction history</h1>
             <select class="select-account">
                 <option>Select Account ▼</option>
+                <option>State Bank of India</option>
+                <option>Punjab National Bank</option>
+                <option>HDFC Bank</option>
+                <option>Axis Bank</option>
             </select>
         </div>
-        <p>Gain Insights and Track Your Transactions Over Time</p>
+        <p>Gain Insights and Track Your Transactions Over Time</p><br>
         <div class="account-card">
             <h2>Chase</h2>
             <div class="account-number">Chase Growth Savings Account</div>
@@ -36,7 +41,13 @@
         </div>
         <div class="transaction-header">
             <h2>Transaction history</h2>
-            <div class="apply-filter">≡ Apply filter</div>
+            <select class="apply-filter">
+                <option>≡ Apply filter</option>
+                <option>Subscriptions</option>
+                <option>Groceries</option>
+                <option>Food</option>
+                <option>Stationary</option>
+            </select>
         </div>
         <table>
             <tr>
@@ -100,13 +111,16 @@
             <a href="#">10</a>
             <a href="#">Next →</a>
         </div>
+    </div>
+    <footer>
         <div class="user-info">
-            <img src="/placeholder.svg?height=40&width=40" alt="Adrian Hajdin" class="user-avatar">
+            <div class="avatar"></div>
             <div>
-                <div>Adrian Hajdin</div>
-                <div>adrian@jsmastery.pro</div>
+                <div class="user-name">Adrian Hajdin</div>
+                <div class="user-email">adrian@jsmastery.pro</div>
             </div>
         </div>
-    </div>
+        <i class="fas fa-sign-out-alt"></i>
+    </footer>
 </body>
 </html>
