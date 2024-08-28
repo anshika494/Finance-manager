@@ -112,7 +112,7 @@ header p {
 
 .circle {
     fill: none;
-    stroke: #4285f4;
+    stroke: #34a853;
     stroke-width: 3.8;
     stroke-linecap: round;
 }
@@ -188,7 +188,7 @@ header p {
 .bank-logo {
     width: 40px;
     height: 40px;
-    background-color: #4285f4;
+    background-color:#4285f4;
     color: white;
     display: flex;
     align-items: center;
